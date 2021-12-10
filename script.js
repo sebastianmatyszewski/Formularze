@@ -9,6 +9,7 @@ function addData(){
     })
     localStorage.setItem("localData", JSON.stringify(array));
     document.forms["form"].reset();
+    document.getElementById('submitBtn').disabled = true;
     showData();
 }
 
