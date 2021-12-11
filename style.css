@@ -23,6 +23,22 @@ input[type=submit]:disabled {
     border: 2px solid #fdb8b8;
 }
 
+input:focus-visible {
+    border: 2px solid black;
+    outline: none;
+}
+
+
+input:invalid,
+select:invalid {
+    border: solid 2px red;
+}
+
+input:valid,
+select:valid {
+    border: solid 2px green
+}
+
 label{
     float: left;
     margin: 0.5em;
@@ -76,6 +92,7 @@ select, input {
     font-size: 0.9em;
     padding: 0.5em;
     width: 12em;
+    margin: 2px;
 }
 
 .submit-button{
